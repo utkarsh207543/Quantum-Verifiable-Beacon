@@ -20,24 +20,21 @@ Key Features:
   - Forward hash-chain for tamper-evident logging
   - Public verification using CyberChef or OpenSSL
 
-========================================================
 Repository Structure
-========================================================
+
 data.txt                  - Raw quantum random bit sequence
 table_beacon_epochs.txt   - Epoch table with SHA-256 hashes and hash-chain
 beacon_epochs.py          - Script for epoch table generation
 verify_chain.py           - Script for chain verification
 README.txt                - This file
 
-========================================================
 Requirements
-========================================================
+
 - Python 3.7 or higher
 - No external dependencies (uses Python's hashlib module)
 
-========================================================
 Quick Start
-========================================================
+
 1. Clone the repository:
    git clone https://github.com/utkarsh207543/Quantum-Verifiable-Beacon.git
    cd Quantum-Verifiable-Beacon
@@ -56,9 +53,8 @@ Quick Start
    Output:
    [OK] Verification passed for all epochs.
 
-========================================================
 CyberChef Verification
-========================================================
+
 Manual verification of epochs using CyberChef:
 
 1. Open CyberChef at:
@@ -86,25 +82,23 @@ Manual verification of epochs using CyberChef:
    - Expected Output:
      9d02e9620a729ada89cac661c2ae64cc5d5547ca90b1db383f816394d56d879f
 
-========================================================
+
 Command-Line Verification (OpenSSL)
-========================================================
+
 Verify Epoch 0 hash:
    head -c 2048 data.txt | tr -d '\n' | openssl dgst -sha256
 
 Expected output:
    (stdin)= a2abcb1fa8be15b750ea2fb4eb2342929c825eb7b4e64540f74f69af130d5034
 
-========================================================
 Applications
-========================================================
+
 - Cryptographic lotteries and consensus protocols
 - Scientific reproducibility in quantum optics experiments
 - Auditable randomness for blockchain or secure systems
 
-========================================================
 Citation
-========================================================
+
 If you use this repository, please cite:
 
 @misc{singh2025quantumbeacon,
@@ -114,7 +108,5 @@ If you use this repository, please cite:
   note={Available at https://github.com/utkarsh207543/Quantum-Verifiable-Beacon}
 }
 
-========================================================
 License
-========================================================
 This project is released under the MIT License. See LICENSE for details.
