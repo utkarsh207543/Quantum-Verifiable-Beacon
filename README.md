@@ -1,9 +1,6 @@
 # Quantum-Verifiable-Beacon
 Publicly verifiable randomness beacon built from a quantum random number generator (QRNG) based on a heralded SPDC single-photon source with a 50:50 beamsplitter.
 
-========================================================
-Quantum-Sourced Verifiable Randomness Beacon
-========================================================
 Author:
   Utkarsh Kumar Singh
   Defence Institute of Advanced Technology (DIAT), Pune, India
@@ -11,9 +8,8 @@ Author:
 Repository:
   https://github.com/utkarsh207543/Quantum-Verifiable-Beacon
 
-========================================================
 Overview
-========================================================
+
 This project implements a publicly verifiable randomness beacon
 using quantum entropy generated from a heralded SPDC single-photon
 source with a 50:50 beamsplitter.
